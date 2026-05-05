@@ -10,9 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-java@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -21,3 +23,23 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build Debug APK
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: DSiSound-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 30
+
+      - name: Create Release
+        if: success()
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: "DSi Sound v1.0.${{ github.run_number }}"
+          body: "Download app-debug.apk and install it on your Android device."
+          files: app/build/outputs/apk/debug/app-debug.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
