@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSi Sound</string>
+    <string name="tap_to_record">Tap to Record</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="no_songs">No audio files found.\nAdd .mp3 or .aac files to your device.</string>
+    <string name="permission_needed">Storage permission needed to access music files.</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="songs">Songs</string>
+    <string name="pitch_label">Pitch</string>
+    <string name="speed_label">Speed</string>
+    <string name="visualizer">Visualizer</string>
+    <string name="settings">Settings</string>
+</resources>

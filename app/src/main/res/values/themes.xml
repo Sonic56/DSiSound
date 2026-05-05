@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DSiSound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dsi_blue</item>
+        <item name="colorPrimaryVariant">@color/dsi_blue_dark</item>
+        <item name="colorOnPrimary">@color/dsi_white</item>
+        <item name="colorSecondary">@color/dsi_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/dsi_bg</item>
+        <item name="android:statusBarColor">@color/dsi_blue_dark</item>
+        <item name="android:navigationBarColor">@color/dsi_blue_dark</item>
+    </style>
+
+    <style name="DSiButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:backgroundTint">@color/dsi_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="DSiIconButton">
+        <item name="android:background">@drawable/btn_circle_bg</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DSi Sound color palette -->
+    <color name="dsi_blue">#4488CC</color>
+    <color name="dsi_blue_dark">#2255AA</color>
+    <color name="dsi_blue_light">#88BBEE</color>
+    <color name="dsi_white">#F0F4FF</color>
+    <color name="dsi_gray">#C8D4E8</color>
+    <color name="dsi_gray_dark">#8898B8</color>
+    <color name="dsi_bg">#D0DCF0</color>
+    <color name="dsi_panel">#E8EEF8</color>
+    <color name="dsi_text">#223366</color>
+    <color name="dsi_accent">#FF6688</color>
+    <color name="dsi_yellow">#FFDD44</color>
+    <color name="dsi_green">#44CC66</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dsi_slider_track">#AABBDD</color>
+    <color name="dsi_slider_thumb">#FFFFFF</color>
+</resources>

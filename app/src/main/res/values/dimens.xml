@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dsi_corner_radius">12dp</dimen>
+    <dimen name="dsi_panel_padding">16dp</dimen>
+    <dimen name="dsi_icon_size">48dp</dimen>
+    <dimen name="dsi_control_size">56dp</dimen>
+    <dimen name="dsi_play_size">72dp</dimen>
+    <dimen name="dsi_text_title">18sp</dimen>
+    <dimen name="dsi_text_body">14sp</dimen>
+    <dimen name="dsi_text_small">11sp</dimen>
+</resources>
